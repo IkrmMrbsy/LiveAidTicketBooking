@@ -1,0 +1,212 @@
+﻿.card {
+    margin-top: 50px; 
+    max-width: 500px; 
+    margin-left: auto; 
+    margin-right: auto;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+.form-group {
+    margin-bottom: 20px; 
+}
+
+.btn-submit {
+    width: 100%; 
+}
+
+
+
+.card1 {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; 
+}
+
+.text-center {
+    text-align: center;
+}
+
+.next-to-payment {
+    color: #007bff; 
+    text-decoration: none; 
+    font-size: 18px; 
+    font-weight: bold;
+    transition: color 0.3s;
+    display: inline-block; 
+    margin-top: 20px; 
+}
+
+    .next-to-payment:hover {
+        color: #0056b3; 
+    }
+
+    .next-to-payment .arrow {
+        margin-left: 5px; 
+    }
+
+        .next-to-payment .arrow::after {
+            content: "\2192"; 
+        }
+
+.card1 img {
+    filter: brightness(0.6);
+    width: 100%;
+    height: 200px;
+    object-fit: cover; 
+    border-radius: 5px;
+    margin-bottom: 30px
+}
+
+
+    .card1 h2 {
+        position: absolute;
+        bottom: 36%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-align: center;
+        z-index: 1; 
+    }
+
+
+.confirmation-card {
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); 
+    padding: 30px;
+    margin: auto;
+    max-width: 500px;
+    text-align: center;
+    z-index: 1; 
+}
+
+    .confirmation-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(../Images/liveaid1.png); 
+        background-size: cover; 
+        background-position: center; 
+        opacity: 0.2;
+        border-radius: 20px;
+        z-index: -1; 
+    }
+
+ 
+    .confirmation-card .card-content {
+        position: relative;
+        z-index: 1; 
+    }
+
+
+.confirmation-details {
+    margin-bottom: 20px;
+    padding: 15px;
+    
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+    .confirmation-details p {
+        margin: 10px 0;
+        font-size: 16px;
+        color: #555;
+    }
+
+.confirmation-message p {
+    margin: 20px 0;
+    font-size: 18px;
+    color: #555;
+    border-left: 4px solid #ff0000; 
+    padding-left: 10px; 
+}
+
+    .confirmation-message p:first-child {
+        margin-top: 0;
+    }
+
+    .confirmation-message p:last-child {
+        margin-bottom: 0;
+    }
+
+
+.card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s; 
+}
+
+.btn.btn-primary.btn-submit {
+    background-color: #003049; 
+}
+
+    .btn.btn-primary.btn-submit:hover {
+        background-color: #0056b3;
+    }
+
+
+
+
+.btn-proceed {
+    background-color: #003049;
+    color: #fff; 
+    padding: 10px 20px; 
+    border: none;
+    border-radius: 8px; 
+    cursor: pointer;
+    font-size: 12px; 
+    margin-top: 20px;
+    font-weight: bold;
+    text-transform: uppercase; 
+    transition: background-color 0.3s, transform 0.2s ease;
+    outline: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+    .btn-proceed:hover {
+        background-color: #0056b3; 
+    }
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 999; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-to-form-title-wrapper {
+    margin-top: 20px;
+    text-align: center;
+}
+
+    .back-to-form-title-wrapper a {
+        color: #3498db; 
+        text-decoration: none; 
+        font-size: 14px; 
+        transition: color 0.3s; 
+    }
+
+        .back-to-form-title-wrapper a:hover {
+            color: #2980b9; 
+        }
+
+        .back-to-form-title-wrapper a span {
+            margin-right: 5px;
+        }

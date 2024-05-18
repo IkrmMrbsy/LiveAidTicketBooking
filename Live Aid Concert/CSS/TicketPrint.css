@@ -1,0 +1,100 @@
+﻿body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, #f9f9f9, #e6e6e6);
+}
+
+.ticket {
+    width: 400px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.ticket-header {
+    background-color: #003049;
+    color: #fff;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+}
+
+    .ticket-header h1 {
+        margin: 0;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+.ticket-body {
+    padding: 20px;
+    text-align: center;
+}
+
+.ticket-info {
+    margin-bottom: 20px;
+}
+
+    .ticket-info p {
+        margin: 10px 0;
+        font-size: 18px;
+        color: #444;
+    }
+
+    .ticket-info strong {
+        color: #666;
+        font-weight: bold;
+    }
+
+.ticket-qrcode img {
+    width: 150px;
+    height: 150px;
+    margin-top: 20px;
+}
+
+.ticket-footer {
+    padding: 20px;
+    text-align: center;
+    font-style: italic;
+    color: #666;
+    border-top: 2px dashed #333;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.download-button {
+    background-color: #003049;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+    .download-button:hover {
+        background-color: #0056b3;
+    }
+
+@media print {
+    .download-button {
+        display: none;
+    }
+}
+
+.back-link {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration:none;
+}
+
+    .back-link::hover {
+        background-color: #003049;
+    }

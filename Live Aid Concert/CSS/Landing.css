@@ -1,0 +1,379 @@
+﻿/* Header Styles */
+header {
+    background-color: #003049;
+    color: #fff;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+    header:hover {
+        background-color: #444;
+    }
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+    nav ul li {
+        display: inline-block;
+        margin-right: 20px;
+    }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+            font-weight: bold;
+        }
+
+            nav ul li a:hover {
+                color: #f8f8f8;
+            }
+
+
+/* Banner Styles */
+#banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url(../Images/liveaid3.jpg);
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    height: 100vh;
+    padding: 100px 0;
+    margin-top: 30px;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+    #banner h1 {
+        font-size: 48px;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+/* About Section Styles */
+#about {
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+    #about img {
+        max-width: 100%;
+    }
+
+    #about h2 {
+        font-size: 36px;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    #about p {
+        color: #666;
+        line-height: 1.6;
+        font-size: 18px;
+    }
+
+/* Countdown Section Styles */
+#countdown {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 15px;
+    color: #fff;
+    height: 310px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(../Images/LiveAidCoundownBackground.jpg);
+    object-fit: cover;
+}
+
+#countdown-timer {
+    display: flex;
+    align-items: center;
+}
+
+    #countdown-timer .countdown-card {
+        margin-right: 15px;
+    }
+
+#countdown-text {
+    text-align: right;
+    max-width: 50%;
+    padding: 20px;
+    margin-right: 100px;
+}
+
+#countdown h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    margin-top: 0;
+    text-align: left;
+}
+
+#countdown p {
+    margin-top: 0;
+    text-align: left;
+}
+
+.countdown-card {
+    text-align: center;
+}
+
+.countdown-content {
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: 48px;
+    color: black;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.card-label {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.countdown-content {
+    animation: fadeInOut 2s linear infinite;
+}
+
+@keyframes fadeInOut {
+    0%, 100% {
+        opacity: 0.7;
+    }
+
+    50% {
+        opacity: 3;
+    }
+}
+
+/* Artists Section Styles */
+#artists {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #f8f9fa;
+}
+
+    #artists h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    #artists p {
+        font-size: 18px;
+        color: #777;
+        margin-bottom: 40px;
+    }
+
+.artist-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.imgartist {
+    width: 400px;
+    height: auto;
+    border-radius: 20px;
+}
+
+#seats {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #f8f9fa;
+}
+
+/* Concerts Section Styles */
+#concerts {
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 50px 0;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.concert {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    display: inline-block;
+    width: 45%;
+    transition: transform 0.3s;
+}
+
+    .concert:hover {
+        transform: translateY(-5px);
+    }
+
+.concert-details {
+    float: left;
+    width: 60%;
+}
+
+.concert h3 {
+    color: #333;
+    margin-top: 0;
+}
+
+.concert p {
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.map-container {
+    float: right;
+    width: 40%;
+}
+
+.concert a {
+    display: block;
+    margin-top: 10px;
+    padding: 8px 20px;
+    text-align: center;
+    width: 250px;
+    background-color: #003049;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+    .concert a:hover {
+        background-color: #0056b3;
+    }
+
+#terms {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+    #terms h2 {
+        font-size: 36px;
+        margin-bottom: 30px;
+        color: #333;
+    }
+
+    #terms p {
+        font-size: 18px;
+        color: #555;
+        line-height: 1.6;
+        margin-bottom: 20px;
+        text-align: justify;
+    }
+
+        #terms p:first-child {
+            margin-top: 0;
+        }
+
+        #terms p:last-child {
+            margin-bottom: 0;
+        }
+
+        #terms p strong {
+            color: #000;
+        }
+
+@media (max-width: 768px) {
+    #terms h2 {
+        font-size: 30px;
+    }
+
+    #terms p {
+        font-size: 16px;
+    }
+}
+
+/* Footer Styles */
+footer {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(../Images/LiveAid9.jpg);
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    height: 400px;
+    position: relative;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 20px;
+}
+
+    .footer-section h2 {
+        margin-bottom: 10px;
+    }
+
+.contact, .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    .contact span {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+.footer-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #1a1a1a;
+    color: #ccc;
+}
+
+#artists,
+#seats,
+#concerts {
+    margin-bottom: 0px;
+    position: relative;
+}
+
+    #artists::after,
+    #seats::after,
+    #concerts::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 50%;
+        height: 1px;
+        background-color: rgba(0, 0, 0, 0.1);
+        transform: translateX(-50%);
+        z-index: 1;
+    }
+
+    #artists::before,
+    #seats::before,
+    #concerts::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 50%;
+        height: 1px;
+        background-color: transparent;
+        transform: translateX(-50%);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        z-index: 2;
+    }
